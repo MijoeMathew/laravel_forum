@@ -1,0 +1,20 @@
+<article>
+  <h3>
+    {{ category.cat_name }} {{ category.id }}
+    <small>{{ category.description }}</small>
+  </h3>
+
+</article>
+ 
+<div>
+  <h2>Add A Product</h2>
+  {{> products._form }}
+ 
+  <section data-role="comments">
+    {{#category.products}}
+      <div>
+        {{> products._product }}
+      </div>
+    {{/category.products}}
+  </section>
+</div>

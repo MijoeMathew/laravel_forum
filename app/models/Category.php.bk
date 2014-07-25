@@ -1,0 +1,36 @@
+<?php
+/**
+ * Represent a Post Item, or Collection
+ */
+class Category extends Eloquent {
+ 
+  /**
+   * Items that are "fillable"
+   * meaning we can mass-assign them from the constructor
+   * or $post->fill()
+   * @var array
+   */
+  protected $fillable = array(
+    'cat_name', 'cat_description'
+  );
+ 
+  /**
+   * Validation Rules
+   * this is just a place for us to store these, you could
+   * alternatively place them in your repository
+   * @var array
+   */
+  public static $rules = array(
+    'cat_name'    => 'required',
+  );
+ 
+  /**
+   * Define the relationship with the comments table
+   * @return Collection collection of Comment Models
+   */
+  public function products()
+  {
+    return $this->hasMany('Product');
+  }
+ 
+}
