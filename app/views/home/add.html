@@ -1,0 +1,116 @@
+<!Doctype html>
+
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Forum</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/prism.css">
+	</head>
+	<body>
+		
+
+<!-- Site header and navigation -->
+	    <header class="top" role="header">
+	        <div class="container">
+	            <a href="#" class="navbar-brand pull-left">
+	                Forum
+	            </a>
+	            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                <span class="glyphicon glyphicon-align-justify"></span>
+	            </button>
+	            <nav class="navbar-collapse collapse" role="navigation">
+	                <ul class="navbar-nav nav pull-right">
+	                    <li><a href="#">Home</a></li>
+	                    <li><a href="#">About</a></li>
+	                    <li><a href="#">Contact</a></li>
+	                </ul>
+	            </nav>
+	        </div>
+	    </header>
+
+<!-- Middle content section -->
+	    <div class="middle single">
+	        <div class="container">
+	        	<div class="row">
+            		<ol class="breadcrumb">
+					  <li><a href="#">Home</a></li>
+					  <li><a href="#">Questions</a></li>
+					  <li class="active">PHP</li>
+					</ol>
+	            </div>
+	            <div class="col-md-9 content">
+	            	<div class="row">
+
+	            		<h1>Ask your questions here</h1>
+
+	        			<input type="text" class="input-large" placeholder="Enter title" />
+
+						<textarea id="contents" name="contents" class="ckeditor" placeholder="Add your views"></textarea>
+	            	</div>	
+	            </div>
+	            <div class="col-md-3">
+	                <h2>Tags</h2>
+	                <ul class="nav nav-pills nav-stacked">
+	                    <li><a href="#" target="_blank">Download Twitter Bootstrap</a></li>
+	                    <li><a href="#" target="_blank">Bootstrap Responsive Themes</a></li>
+	                    <li><a href="#" target="_blank">UK: HTML & CSS: Design and Build Web Sites</a></li>
+	                    <li><a href="http://amzn.to/1lESKDp" target="_blank">UK: Bootstrap Site Blueprints</a></li>
+	                    <li><a href="#" target="_blank">US: HTML & CSS: Design and Build Web Sites</a></li>
+	                    <li><a href="#" target="_blank">US: Bootstrap Site Blueprints</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+
+<!-- Site footer -->
+	    <div class="bottom">
+	        <div class="container">
+	            <div class="col-md-4">
+	                <h3><span class="glyphicon glyphicon-heart"></span> Footer section 1</h3>
+	                <p>Content for the first footer section.</p>
+	            </div>
+	            <div class="col-md-4">
+	                <h3><span class="glyphicon glyphicon-star"></span> Footer section 2</h3>
+	                <p>Content for the second footer section.</p>
+	            </div>
+	            <div class="col-md-4">
+	                <h3><span class="glyphicon glyphicon-music"></span> Footer section 3</h3>
+	                <p>Content for the third footer section.</p>
+	            </div>
+	        </div>
+	    </div>
+
+
+
+
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/prism.js" >
+		</script>
+		<script src="ckeditor/ckeditor.js"></script>
+		<script type='text/javascript'>
+
+			CKEDITOR.on('instanceCreated', function (e) {
+/*
+			    /*$("#newComment").html(e.editor.getData());
+
+			    e.editor.on('change', function (ev) {
+			        $("#newComment").html(ev.editor.getData());
+			    });*/
+			});
+
+
+
+			var config = { extraPlugins: 'onchange'};
+			CKEDITOR.replace( 'contents',config);
+		</script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
+

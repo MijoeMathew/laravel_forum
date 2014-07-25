@@ -6,7 +6,7 @@
 <li><a href="#">Contact</a></li>
 <li><a href="#" class="login">Login/Signup</a></li>
 
-@endsection
+@stop
 
 
 @section("content")
@@ -141,4 +141,4 @@
     </ul>
 </div>
 
-@endsection
+@stop

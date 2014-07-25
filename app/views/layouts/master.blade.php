@@ -26,7 +26,7 @@
                     <ul class="navbar-nav nav pull-right">
                         @section("navigation")
                         <li><a href="#">Home</a></li>
-                        @yield_section
+                        @show
 
                     </ul>
                 </nav>
