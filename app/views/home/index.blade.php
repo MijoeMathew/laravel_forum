@@ -9,6 +9,19 @@
 @stop
 
 
+@section("banner")
+  <div class="banner">
+            <div class="container">
+                <h1>Ask your questions!! Share your ideas!!</h1>
+                <p>A comprehensive forum to describe your thoughts and views.</p>
+
+                <a class="btn btn-default">Ask a question</a>
+                <a class="btn btn-default pull-right">Share your knowledge</a>
+            </div>
+        </div>
+@stop
+
+
 @section("content")
 <div class="container">
 <div class="col-md-9 content">

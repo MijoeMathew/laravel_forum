@@ -24,6 +24,7 @@
                 </button>
                 <nav class="navbar-collapse collapse" role="navigation">
                     <ul class="navbar-nav nav pull-right">
+                      
                         @section("navigation")
                         <li><a href="#">Home</a></li>
                         @show
@@ -34,8 +35,9 @@
         </header>
 
 
-        <!-- Site banner -->
-        <div class="banner">
+		@section("banner")
+		
+		  <div class="banner">
             <div class="container">
                 <h1>Ask your questions!! Share your ideas!!</h1>
                 <p>A comprehensive forum to describe your thoughts and views.</p>
@@ -44,6 +46,7 @@
                 <a class="btn btn-default pull-right">Share your knowledge</a>
             </div>
         </div>
+        @show     
 
 
 <!-- Middle content section -->
@@ -99,6 +102,7 @@
         {{ HTML::script('js/jQuery.js') }}
         {{ HTML::script('js/bootstrap.min.js') }}
         {{ HTML::script('js/custom.js') }}
+        
     </body>
 
 </html>
